@@ -21,7 +21,8 @@ export function TaskList() {
       title: newTaskTitle,
       isComplete: false
     }
-    setTasks([taskLists])
+    const alltasks = [...tasks, taskLists]
+    setTasks(alltasks)
     console.log(tasks);
     
     // Crie uma nova task com um id random, não permita criar caso o título seja vazio.
